@@ -1,25 +1,22 @@
+       *> MAIN INDEX Controller
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. INDEX.
+       DATA DIVISION.
 
+        WORKING-STORAGE SECTION.
+            01 CREATER.
+                03 CREATER_ID PIC x.
+                03 CREATER_NAME PIC x(20).
+                
+       PROCEDURE DIVISION.
+           *> CREATER Accept
+           DISPLAY "What`s your Creater ID ? ".
+           ACCEPT CREATER_ID.
+           
+           DISPLAY "What`s your Creater Name ? ".
+           ACCEPT CREATER_NAME.
+           
+           DISPLAY "Accept " CREATER_ID " : " CREATER_NAME.
 
-       identification division.
-       program-id. indexweb.
-
-       data division.
-       working-storage section.
-
-       01 the-vars.
-
-          03  COW-vars OCCURS 99 times.
-        
-            05 COW-varname       pic x(99).
-            05 COW-varvalue      pic x(99).    
-
-
-       procedure division.
-
-           call 'templates' using the-vars "index.cow".
-
-      
-       goback.
-
-       end program indexweb.
+           STOP RUN.
 

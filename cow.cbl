@@ -78,7 +78,6 @@
  web-header.
 
        display
-           "content-type: text/html"
            newline
        end-display.
 
